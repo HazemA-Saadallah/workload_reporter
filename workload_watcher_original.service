@@ -1,0 +1,14 @@
+[Unit]
+Description=workload reporter
+#After=syslog.target network.target
+
+[Service]
+type=simple
+#WorkingDirectory=/home/mrx/win_dir/Users/hazem/Documents/CSIT/Second year/Semester 4/CSC 221 Operating Systems/Projects/1/python
+ExecStart=/home/mrx/win_dir/Users/hazem/Documents/CSIT/Second year/Semester 4/CSC 221 Operating Systems/Projects/1/python/daemon.py
+
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
